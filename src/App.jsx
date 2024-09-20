@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './LandingPage';
 import FibonacciVisualizer from './FibonacciVisualizer';
 import FactorialVisualizer from './FactorialVisualizer';
