@@ -1,0 +1,85 @@
+/* App.css */
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the entire app */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  background-color: #1e1e1e;
+  min-height: 100vh;
+}
+
+/* Styling for the buttons */
+button {
+  background-color: #ff6f61;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e55b50;
+}
+
+button:disabled {
+  background-color: #b0b0b0;
+  cursor: not-allowed;
+}
+
+/* Styling for the call stack section */
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+/* SVG Container */
+svg {
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Tree Node Styles */
+.tree-node {
+  stroke: #ffffff;
+  stroke-width: 2;
+}
+
+.tree-node:hover {
+  stroke: #ffddc1;
+}
+
+/* Tree Branch Styles */
+.tree-branch {
+  stroke: #ff6f61;
+  stroke-width: 2;
+  marker-end: url(#arrowhead);
+}
+
+.tree-branch.highlighted {
+  stroke: #ffddc1;
+  stroke-width: 4;
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@300;700&display=swap');
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.header h1 {
+  font-size: 3.5em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+  color: #ffdd57;
+  text-shadow: 2px 2px #333;
+}
+
+.header p {
+  font-size: 1.3em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #f5f5f5;
+}
+
+.content {
+  margin-top: 30px;
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.content p {
+  font-size: 1.2em;
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+.dropdown-container {
+  margin-top: 25px;
+}
+
+.dropdown-label {
+  font-size: 1.3em;
+  font-family: 'Raleway', sans-serif;
+  color: #ffdd57;
+  margin-right: 15px;
+}
+
+.dropdown {
+  padding: 0.6em;
+  font-size: 1.1em;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown:hover {
+  background-color: #f7f7f7;
+}
+
+.dropdown:focus {
+  outline: none;
+  border: 2px solid #ffdd57;
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  font-size: 1em;
+  color: #f5f5f5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

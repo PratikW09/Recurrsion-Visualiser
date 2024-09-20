@@ -1,0 +1,50 @@
+.visualizer-container {
+    position: relative;
+    width: 2000px;
+    height: 1500px;
+    overflow: scroll;
+    touch-action: pan-x pan-y; /* Allows two-finger scrolling */
+  }
+  
+  .branch {
+    height: 2px;
+    background-color: black;
+  }
+  
+  .node {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+  }
+  
+  .base-case {
+    background-color: yellow;
+  }
+  
+  .recursion-visualization {
+    position: absolute;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .entering {
+    background-color: lightgreen;
+  }
+  
+  .exiting {
+    background-color: lightcoral;
+  }
+  
+  .completed {
+    background-color: lightyellow;
+  }
+  
