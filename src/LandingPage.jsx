@@ -24,8 +24,9 @@ const LandingPage = () => {
             }}
           >
             <option value="/">Select Function</option>
-            <option value="/fibonacci">Fibonacci Function</option>
-            <option value="/factorial">Factorial Function</option>
+            <option value="/fibonacci">
+            <Link to="/fibonacci">Fibonacci Function</Link></option>
+            <option value="/factorial"> <Link to="/factorial">Factorial Function</Link></option>
           </select>
         </div>
       </section>

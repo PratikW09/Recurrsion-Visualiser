@@ -8,7 +8,7 @@ import './App.css'; // Import your CSS
 const App = () => {
   return (
     <Router>
-      <FibonacciVisualizer/>
+      
       <div className="App">
         <Routes>
           <Route path="/" element={<LandingPage />} />
