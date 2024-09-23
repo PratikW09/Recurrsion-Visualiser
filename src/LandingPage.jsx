@@ -1,14 +1,14 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './LandingPage.css'; // CSS file for styling
 
 const LandingPage = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleSelectChange = (e) => {
     const selectedValue = e.target.value;
     if (selectedValue) {
-      history.push(selectedValue);
+      navigate(selectedValue); // Use 'navigate' instead of 'history.push'
     }
   };
 
@@ -27,7 +27,7 @@ const LandingPage = () => {
         <div className="dropdown-container">
           <label className="dropdown-label">Choose a function to visualize:</label>
           <select className="dropdown" onChange={handleSelectChange}>
-            <option value="/">Select Function</option>
+            <option value="">Select Function</option>
             <option value="/fibonacci">Fibonacci Function</option>
             <option value="/factorial">Factorial Function</option>
           </select>
